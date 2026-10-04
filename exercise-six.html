@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gaming Survey</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h2>Exercise 6 / Your Own Survey</h2>
+
+    <form action="/survey" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="game">Favorite game</label>
+      <select id="game" name="game">
+        <option value="lol">League of Legends</option>
+        <option value="minecraft">Minecraft</option>
+        <option value="sims">The Sims</option>
+        <option value="other">Other</option>
+      </select>
+
+      <p>How often do you play?</p>
+      <label for="daily">Daily</label>
+      <input type="radio" id="daily" name="frequency" value="daily">
+      <label for="weekly">Weekly</label>
+      <input type="radio" id="weekly" name="frequency" value="weekly">
+      <label for="rarely">Rarely</label>
+
+      <input type="radio" id="rarely" name="frequency" value="rarely">
+
+      <br></br>
+
+      <label for="hours">How many hours do you play per week? (0-10)</label>
+      <input type="range" id="hours" name="hours" min="0" max="10" value="5">
+
+      <label for="color">Favorite color</label>
+      <input type="color" id="color" name="color">
+
+      <label for="date">When did you last play?</label>
+      <input type="date" id="date" name="date">
+
+      <label for="time">What time do you normally play?</label>
+      <input type="time" id="time" name="time">
+
+      <label for="screenshot">Upload a gaming screenshot</label>
+      <input type="file" id="screenshot" name="screenshot">
+
+      <label for="comments">Tell us about your favorite game</label>
+      <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+
+      <button type="submit">Submit Survey</button>
+    </form>
+  </body>
+</html>

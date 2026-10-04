@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <h2>Exercise 1 / Your Own Search Engine</h2>
+    <form action="https://www.google.com/search" method="get">
+      <input type="text" name="q" placeholder="Search..." autofocus required />
+      <button type="submit">Search</button>
+    </form>
+    
+    <h2>Exercise 2 / A Login Screen</h2>
+    <form action="/login" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+            <button type="submit">Login</button>
+        </fieldset>
+    </form>
+
+    <h2>Exercise 3 / A Callback Form</h2>
+    <form action="/callback" method="post">
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required>
+        <label for="date">Preferred date</label>
+        <input type="date" id="date" name="date">
+        <label for="timewindow">Preferred time window</label>
+        <select id="timewindow" name="timewindow">
+            <option value="morning">Morning</option>
+            <option value="midday">Midday</option>
+            <option value="noon">Noon</option>
+            <option value="evening">Evening</option>
+        </select>
+        <button type="submit">Schedule call</button>
+    </form>
+    <h2>Exercise 4 / Real-Time Validation</h2>
+
+    <form action="/submit" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required minlength="2" maxlength="50">
+      <label for="account-email">Email</label>
+      <input type="email" id="account-email" name="email" placeholder="example@mail.com" required>
+      <label for="account-password">Password</label>
+      <input type="password" id="account-password" name="password" placeholder="Enter password" required minlength="6">
+      <button type="submit">Create Account</button>
+    </form>
+    
+  </body>
+</html>

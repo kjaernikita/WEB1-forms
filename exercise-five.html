@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Exercise 5 / A Payment Form</h2>
+
+    <form action="/payment" method="post">
+
+        <label for="cardholder">Cardholder name</label>
+        <input
+            type="text"
+            id="cardholder"
+            name="cardholder"
+            placeholder="John Doe"
+            required
+        >
+
+        <label for="cardnumber">Card number</label>
+        <input
+            type="text"
+            id="cardnumber"
+            name="cardnumber"
+            placeholder="1234567812345678"
+            pattern="[0-9]{16}"
+            required
+        >
+
+        <label for="expiry">Expiry date</label>
+        <input
+            type="month"
+            id="expiry"
+            name="expiry"
+            required
+        >
+
+        <label for="securitycode">Security code</label>
+        <input
+            type="text"
+            id="securitycode"
+            name="securitycode"
+            placeholder="123"
+            pattern="[0-9]{3}"
+            required
+        >
+
+        <button type="submit">Pay</button>
+
+    </form>
+
+</body>
+
+</html>
